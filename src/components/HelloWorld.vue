@@ -44,7 +44,12 @@ export default defineComponent({})
 <script setup lang="ts">
 import { defineProps } from "vue"
 
-// defineProps<HelloWorldProp>() // this throw error 
+interface HelloWorldPropDuplicated {
+  msg: string
+}
+
+defineProps<HelloWorldPropDuplicated>() // this works
+// defineProps<HelloWorldProp>() // this throw error
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
