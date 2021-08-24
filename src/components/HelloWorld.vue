@@ -32,15 +32,19 @@
 </template>
 
 <script lang="ts">
-export interface HelloWorldProps {
+import { defineComponent } from "vue"
+
+export interface HelloWorldProp {
   msg: string
 }
+
+export default defineComponent({})
 </script>
 
 <script setup lang="ts">
 import { defineProps } from "vue"
 
-defineProps<HelloWorldProps>()
+// defineProps<HelloWorldProp>() // this throw error 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

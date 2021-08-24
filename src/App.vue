@@ -5,7 +5,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld, { HelloWorldProps } from './components/HelloWorld.vue';
+import HelloWorld, { HelloWorldProp } from './components/HelloWorld.vue';
+
+const test: HelloWorldProp = {
+  msg: "test"
+}
 
 export default defineComponent({
   name: 'App',
