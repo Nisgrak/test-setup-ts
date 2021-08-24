@@ -7,6 +7,8 @@
 import { defineComponent } from 'vue';
 import HelloWorld, { HelloWorldProps } from './components/HelloWorld.vue';
 
+const test: HelloWorldProps = { msg: "test"};
+
 export default defineComponent({
   name: 'App',
   components: {

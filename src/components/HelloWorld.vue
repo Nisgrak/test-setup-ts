@@ -30,15 +30,12 @@
     </ul>
   </div>
 </template>
+<script setup lang="ts">
+import { defineProps } from "vue"
 
-<script lang="ts">
 export interface HelloWorldProps {
   msg: string
 }
-</script>
-
-<script setup lang="ts">
-import { defineProps } from "vue"
 
 defineProps<HelloWorldProps>()
 </script>
